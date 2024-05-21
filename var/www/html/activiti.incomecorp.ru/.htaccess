@@ -1,8 +1,0 @@
-<IfModule mod_headers.c>
-    Header always unset X-Frame-Options
-</IfModule>
-
-RewriteEngine On
-
-RewriteCond %{REQUEST_URI} !\.(css|jpg|gif|png|zip|rar|doc|xls|js|tif|tiff|docx|xlsx|ico|webp|txt|json)$
-RewriteRule ^ index.php [L]
